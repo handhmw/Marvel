@@ -1,0 +1,29 @@
+<h2 class="mh-subtitle">{{title}}</h2>
+
+<div class="mh-search-container">
+    <form (submit)="onSearch(searchInput.value)">
+        <input type="text" #searchInput [value]="query" class="form-control search-field">
+        <button class="btn search-btn" type="submit">Search</button>
+    </form>
+</div>
+
+<div *ngIf="isLoading">
+    Sabar yaa sedang dimuat...
+</div>
+
+<div class="wrapper">
+    <div *ngIf="entities && !isLoading" class="mh-cards-list">
+        <mh-entities-list-item
+            *ngFor="let entity of entities.data.results"
+            [entity]="entity"
+            class="overlay-container"
+        ></mh-entities-list-item>
+    </div>
+</div>
+
+<mh-pagination
+    *ngIf="getTotalPages()"
+    [currentPage]="page"
+    [totalPages]="getTotalPages()"
+    (change)="onChangePage($event)"
+></mh-pagination>

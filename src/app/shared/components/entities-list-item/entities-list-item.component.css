@@ -1,0 +1,11 @@
+.md-card {
+    display: block;
+    text-align: center;
+    border: 1px solid #eee;
+    padding: 10px;
+    margin: 0 10px 20px;
+}
+
+h3:link, h3:visited, h3:hover{
+    text-decoration:none;
+}

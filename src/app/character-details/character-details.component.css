@@ -1,0 +1,15 @@
+.md-thumbnail-container {
+  width: 100%;
+  max-width: 300px;
+}
+
+.button {
+  background-color: #555555;
+  border: none;
+  color: white;
+  padding: 15px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+}

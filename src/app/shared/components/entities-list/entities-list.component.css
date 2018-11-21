@@ -1,0 +1,46 @@
+.mh-subtitle {
+  text-align: center;
+}
+
+.mh-search-container {
+  padding: 10px;
+  text-align: center;
+}
+
+.mh-cards-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.mh-cards-list__item {
+  flex: 0 0 200px;
+}
+
+.wrapper {
+  max-width: 80em;
+  margin: 0 auto;
+}
+
+.wrapper .overlay-container {
+  display: block;
+  position: relative;
+  height: 35%;
+  width: 25%;
+  padding: 5px 5px 5px;
+}
+
+.search-field {
+  border-radius: 0 !important;
+  border-color: transparent !important;
+  -webkit-box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.2) !important;
+  -moz-box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.2) !important;
+  box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.2) !important;
+}
+
+.search-btn {
+  width: 4.8em;
+  background-color: #1E90FF;
+  color: white;
+  font-size: 14px;
+}
